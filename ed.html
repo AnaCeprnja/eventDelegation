@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<h1> Just a simple example of Event Delegation</h1>
+
+<p>An event listener is a procedure in JavaScript that waits for an event to occur. The simple example of an event
+    is a
+    user clicking the mouse or pressing a key on the keyboard.</p>
+
+<ul id="list">
+    <li>Green</li>
+    <li>Blue</li>
+    <li>Red</li>
+    <li>Yellow</li>
+    <li>Pink</li>
+    <li>Orange</li>
+</ul>
+
+<head>
+    <script>
+        const list = document.getElementById("list");
+        list.addEventListener("click", fucntion(e) {
+            const target = e.target;
+
+
+            if(target.matches("li")) {
+            target.style.backgroundcolor = "green";
+        }
+});
+    </script>
+</head>
+
+</html>
